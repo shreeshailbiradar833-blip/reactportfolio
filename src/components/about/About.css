@@ -1,0 +1,187 @@
+#About{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 100px 5% 40px;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+
+.leftAbout{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.circle-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #74d8ee;
+    box-shadow: 0 0 25px #74d8ee;
+}
+
+.line{
+    width: 2px;
+    height: 150px;
+    background: #74d8ee;
+}
+
+.aboutdetails{
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalInfo,
+.Education,
+.Skills{
+    margin-bottom: 20px;
+}
+
+.aboutdetails h1{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 8px 0;   /* only 8px below the heading */
+
+    background: linear-gradient(to right, rgb(191,27,79), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutdetails ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutdetails li{
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.aboutdetails span{
+    color: #7ad7ea;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* RIGHT SIDE */
+
+.rightAbout{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:950px){
+
+    #About{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 100px 20px 40px;
+    }
+
+    .leftAbout{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rightAbout{
+        width: 100%;
+        align-items: center;
+    }
+
+    .aboutdetails{
+        max-width: 100%;
+    }
+
+    .aboutdetails h1{
+        font-size: 32px;
+    }
+
+    .aboutdetails li,
+    .aboutdetails span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px){
+
+    #About{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px 40px;
+        gap: 40px;
+    }
+
+    .leftAbout{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .circle-line{
+        align-items: center;
+    }
+
+    .aboutdetails{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalInfo,
+    .Education,
+    .Skills{
+        margin-bottom: 25px;
+    }
+
+    .aboutdetails h1{
+        font-size: 28px;
+    }
+
+    .aboutdetails li{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .rightAbout{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .Card{
+        width: 280px;
+    }
+
+}
